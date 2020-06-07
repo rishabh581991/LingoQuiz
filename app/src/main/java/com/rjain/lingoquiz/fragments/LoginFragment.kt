@@ -21,7 +21,6 @@ import com.rjain.lingoquiz.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
 
-    private lateinit var mAuth : FirebaseAuth
     private lateinit var googleSignInClient : GoogleSignInClient
     private lateinit var binding : FragmentLoginBinding
     private val RC_SIGN_IN = 123
@@ -55,7 +54,6 @@ class LoginFragment : Fragment() {
         auth = FirebaseAuth.getInstance()
         // Check if user is signed in (non-null) and update UI accordingly.
         if(auth.currentUser != null) {
-            val currentUser = auth.currentUser
             goToHomeScreenFrag()
         }
     }
@@ -90,7 +88,6 @@ class LoginFragment : Fragment() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
-                    val user = auth.currentUser
                     goToHomeScreenFrag()
                 } else {
                     // If sign in fails, display a message to the user.

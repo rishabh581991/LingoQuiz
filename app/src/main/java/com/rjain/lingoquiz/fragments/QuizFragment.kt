@@ -79,7 +79,7 @@ class QuizFragment : Fragment() {
     }
 
     private fun updateRadioButtonOnUserClick(corrAns : String) {
-        binding.fragmentQuizRadioGroup.setOnCheckedChangeListener { group, checkedId ->
+        binding.fragmentQuizRadioGroup.setOnCheckedChangeListener { _, checkedId ->
 
             val radio: RadioButton = binding.root.findViewById(checkedId)
             when (checkedId) {

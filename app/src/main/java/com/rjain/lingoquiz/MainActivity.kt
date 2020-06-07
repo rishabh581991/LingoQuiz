@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         if(currentFrag is QuizFragment || currentFrag is ResultFragment){
-           displayDialog();
+           displayDialog()
         }
     }
 
     private fun displayDialog() {
-        val dialog = Dialog(this);
+        val dialog = Dialog(this)
         dialog.setContentView(R.layout.exit_dialog)
 
         val quitBtn : Button = dialog.findViewById(R.id.yes_btn)
