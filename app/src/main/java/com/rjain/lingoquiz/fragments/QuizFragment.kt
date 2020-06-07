@@ -48,6 +48,8 @@ class QuizFragment : Fragment() {
                     quizModels.add(quizModel)
                 }
                 loadQuestions(quizModels as ArrayList<QuizModel>,MainActivity.quesNo)
+                binding.fragmentQuizProgressBar.max = quizModels.size
+                binding.fragmentQuizProgressBar.progress = MainActivity.quesNo
             }
 
         })
@@ -57,11 +59,6 @@ class QuizFragment : Fragment() {
         }
 
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding.fragmentQuizProgressBar.max = quizModels.size
     }
 
     private fun loadQuestions(quizModels: ArrayList<QuizModel>, pos : Int) {

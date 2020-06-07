@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:indeterminate="false"
-            android:progress="10"
+            android:progressDrawable="@drawable/progressbar_background"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_margin="20dp" />
 
