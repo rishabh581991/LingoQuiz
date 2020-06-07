@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         if(currentFrag is QuizFragment || currentFrag is ResultFragment){
            displayDialog();
-        } else { super.onBackPressed() }
+        }
     }
 
     private fun displayDialog() {

@@ -14,9 +14,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.rjain.lingoquiz.R
 import com.rjain.lingoquiz.databinding.FragmentLoginBinding
@@ -58,7 +56,7 @@ class LoginFragment : Fragment() {
         // Check if user is signed in (non-null) and update UI accordingly.
         if(auth.currentUser != null) {
             val currentUser = auth.currentUser
-            updateUI(currentUser)
+            goToHomeScreenFrag()
         }
     }
 
@@ -93,18 +91,18 @@ class LoginFragment : Fragment() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = auth.currentUser
-                    updateUI(user)
+                    goToHomeScreenFrag()
                 } else {
                     // If sign in fails, display a message to the user.
                     Toast.makeText(binding.root.context, "Authentication Failed.", Toast.LENGTH_SHORT).show()
-                    updateUI(null)
+                    goToHomeScreenFrag()
                 }
 
                 // ...
             }
     }
 
-    private fun updateUI(user: FirebaseUser?) {
+    private fun goToHomeScreenFrag() {
         findNavController().navigate(R.id.action_loginFragment_to_homeScreenFragment)
     }
 

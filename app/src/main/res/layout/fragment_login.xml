@@ -37,22 +37,26 @@
             android:layout_centerHorizontal="true" />
 
         <TextView
+            android:id="@+id/label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:fontFamily="sans-serif"
-            android:text="Please Sign in first to Continue"
+            android:text="Please Sign in to Continue"
             android:layout_below="@+id/fragment_login_title"/>
 
         <com.google.android.gms.common.SignInButton
+            android:layout_margin="20dp"
+            android:layout_below="@+id/label"
             android:id="@+id/fragment_login_signInButton"
             android:layout_width="250dp"
             android:layout_marginBottom="100dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
+
+
 
     </RelativeLayout>
 
