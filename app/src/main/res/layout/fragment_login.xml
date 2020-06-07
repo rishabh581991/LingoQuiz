@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.HomeScreenFragment"
+        android:background="@drawable/gradient_background">
+
+        <TextView
+            android:id="@+id/fragment_login_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/fragment_login_logo_imageView"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="62sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/fragment_login_logo_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_translate"
+            android:tint="@color/colorAccent"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif"
+            android:text="Please Sign in first to Continue"
+            android:layout_below="@+id/fragment_login_title"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/fragment_login_signInButton"
+            android:layout_width="250dp"
+            android:layout_marginBottom="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.QuizFragment"
+        android:background="@drawable/gradient_background">
+
+        <ProgressBar
+            android:id="@+id/fragment_quiz_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:progress="10"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/fragment_quiz_question"
+            android:layout_below="@+id/fragment_quiz_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Please wait . . .\n\nLoading Quiz"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="50sp" />
+
+        <RadioGroup
+            android:layout_margin="20dp"
+            android:id="@+id/fragment_quiz_radioGroup"
+            android:layout_below="@+id/fragment_quiz_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/fragment_quiz_optionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Option A"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorWhite"
+                android:buttonTint="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/fragment_quiz_optionB"
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Option B"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorWhite"
+                android:buttonTint="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/fragment_quiz_optionC"
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Option C"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorWhite"
+                android:buttonTint="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/fragment_quiz_optionD"
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Option D"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorWhite"
+                android:buttonTint="@color/colorWhite" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+</layout>

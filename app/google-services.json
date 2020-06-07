@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "400260042312",
+    "firebase_url": "https://lingoquiz-beacf.firebaseio.com",
+    "project_id": "lingoquiz-beacf",
+    "storage_bucket": "lingoquiz-beacf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400260042312:android:83d5be13659c08affc527d",
+        "android_client_info": {
+          "package_name": "com.rjain.lingoquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400260042312-3nbeg2dnv7v100g3l2993scb0klkraiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rjain.lingoquiz",
+            "certificate_hash": "32101949c6794973a246666feb9db9517571022c"
+          }
+        },
+        {
+          "client_id": "400260042312-j67fodds1lurlsrq5nguu7rh6mh16dup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA61WNiFpVrcTEsjYX6XYZytsCUHFpE9mI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400260042312-j67fodds1lurlsrq5nguu7rh6mh16dup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
